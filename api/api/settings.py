@@ -44,8 +44,9 @@ THIRD_PARTY_APPS = [
 
 LOCAL_APPS = [
     'addresses',
-    'comment_reviews',
     'attractions',
+    'comment_reviews',
+    'tourist_spots',
 ]
 
 INSTALLED_APPS = DEFAULT_APPS + THIRD_PARTY_APPS + LOCAL_APPS
