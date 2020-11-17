@@ -6,3 +6,6 @@ from .serializers import AttractionSerializer
 class AttractionViewsets(ModelViewSet):
     queryset = Attraction.objects.all()
     serializer_class = AttractionSerializer
+
+    def get_queryset(self):
+        return Attraction.objects.all()

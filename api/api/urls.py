@@ -22,10 +22,10 @@ from comment_reviews.viewsets import CommentViewsets, ReviewViewsets
 from tourist_spots.viewsets import TouristSpotViewsets
 
 router = routers.DefaultRouter()
-router.register(r'attractions', AttractionViewsets)
-router.register(r'comments', CommentViewsets)
-router.register(r'reviews', ReviewViewsets)
-router.register(r'touristspots', TouristSpotViewsets)
+router.register(r'attractions', AttractionViewsets, basename='Attraction')
+router.register(r'comments', CommentViewsets, basename='Comment')
+router.register(r'reviews', ReviewViewsets, basename='Review')
+router.register(r'touristspots', TouristSpotViewsets, basename='TouristSpot')
 
 urlpatterns = [
     path('', include(router.urls)),
